@@ -1,0 +1,169 @@
+/* --------------------------------------Browser reset start------------------------------------ */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+nav, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align:baseline;
+    background: transparent;
+}
+
+/* --------------------------------------Browser reset start------------------------------------ */
+
+
+
+
+
+body {
+   margin: 0;
+   padding: 0; 
+font-family: 'Montserrat', sans-serif;
+   background-image: url("img/palme.png");
+   background-size: 120%;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.flex-container>div {
+    width: 100px;
+    text-align: right;
+    line-height: 75px;
+}
+
+.logo {
+    position: relative;
+    right: 35px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.login {
+    position: relative;
+    padding-right: 5px;
+    padding-top: 9px;
+}
+
+
+
+/* list items img*/
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+}
+
+
+
+main img {
+    margin-top: 20px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+
+.mimi {
+    grid-column: 3/ 5;
+    grid-row: 1 / 2;
+}
+
+.thomas {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+
+.erik {
+    grid-column: 3/ 5;
+    grid-row: 3 / 4;
+}
+
+
+
+
+
+
+
+/* Sidebar*/
+
+
+.sidebar {
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    background: #f7f5ed;
+    opacity: 0.8;
+    border-radius: 20px;
+    
+}
+
+
+.sidebar ul li {
+    list-style: none;
+    padding: 15px 10px; 
+    color: black;
+    margin-left: 10px; 
+}
+
+
+  .sidebar {
+      display: none;
+  }
+

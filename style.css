@@ -1,0 +1,109 @@
+body {
+    background-image:url(img/background2.jpg);
+    background-size: cover;
+    background-size: 150%;
+}
+
+/*logo and sign in*/
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.flex-container>div {
+    width: 100px;
+    text-align: right;
+    line-height: 75px;
+}
+
+.logo {
+    position: relative;
+    right: 35px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.login {
+    position: relative;
+    padding-right: 5px;
+    padding-top: 9px;
+}
+
+/* Tekst på forsiden */
+.box {
+    background-color: white;
+    border-radius: 20px;
+    margin: 5%;
+    padding: 5%;
+    margin-top: 30%;
+    opacity: 0.8;
+}
+
+.welcome {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+
+/* Button */
+
+.btn {
+    border: 2px solid #73cddd;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #73cddd;
+}
+
+div {
+    text-align: center;
+}
+
+
+/* Animation */
+.btn span {
+    cursor: pointer; 
+    display: inline-block;
+    position: relative; 
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/*footer*/
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}

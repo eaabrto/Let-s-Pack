@@ -1,0 +1,266 @@
+/*background for the sign in page*/
+body {
+    background-image: url(img/signin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 160%;
+}
+
+/*background for the error page*/
+#cover{
+    background-image: url(img/error.jpg);
+    background-size: cover;
+    background-size: 180%;
+}
+
+/*background for the profile page*/
+#profile {
+    background-image: url(img/palmepalme.jpg);
+    background-size: cover;
+    background-size: 120%;
+}
+
+/*sign in text*/
+#sign {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+/*error page font size*/
+#error{
+    font-size: 3em;
+    text-align: center;
+    margin: 5%;
+    margin-bottom: -3%;
+}
+
+.sin {
+    margin-top: 1%;
+    color: black;
+}
+
+
+#sorry{
+    font-size: 2.5em;
+    text-align: center;
+    color: black;
+    margin-bottom: 4%;
+}
+
+#page {
+    margin-top: 35%;
+}
+
+h1, p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*profile page name font*/
+#image{
+    background:#f7f5ed;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2%;
+    margin-bottom: 10%;
+}
+
+/*image of the user*/
+#guy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 50%;
+   
+}
+
+/*vertical line and text*/
+.inline{
+    display: inline;
+    margin-left: 10%;
+    font-size: 0.9em;
+    padding-left: 4%;
+    margin-right: 1%;
+}
+
+.vl {
+    border-left: 1.5px solid black;
+    margin-right: 5%;
+}
+
+/*logo and sign in icons*/
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.flex-container>div {
+    width: 100px;
+    text-align: right;
+    line-height: 75px;
+}
+
+.logo {
+    position: relative;
+    right: 35px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.login {
+    position: relative;
+    padding-right: 5px;
+    padding-top: 9px;
+}
+
+
+.none {
+    display: none;
+}
+main{
+    margin-top: 20%;
+}
+
+/*profile user info*/
+#list {
+    background: #f7f5ed;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: 1%;
+    padding-top: 2%;
+    margin-top: 10%;
+}
+
+
+/*username & password box*/
+.box {
+    background-color: white;
+    border-radius: 20px;
+    margin: 2%;
+    padding: 2%;
+    margin-bottom: 5%;
+    margin-top: 20%;
+}
+
+.box1 {
+    background-color: white;
+    border-radius: 20px;
+    margin: 2%;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+.border {
+    background-color: #f7f5ed;
+    border-radius: 20px;
+    margin: 2%;
+    padding: 2%;
+    margin-bottom: 5%;
+    opacity: 0.8;
+}
+
+/* Button */
+
+.btn {
+    border: 2px solid #73cddd;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.btn:hover {
+    background: #73cddd;
+}
+
+div {
+    text-align: center;
+}
+
+/* Animation */
+.btn span {
+    cursor: pointer; 
+    display: inline-block;
+    position: relative; 
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+
+
+.group {
+    display: inline;
+    margin-left: 5%;
+    margin-top: 10%;
+    padding: 5%;
+
+}
+
+/*facebook icon*/
+#face {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 15%;
+    
+}
+
+/*sign in page form input*/
+form{
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    border: 0;
+    padding: 1%;
+    width: 93%;
+    height: 30px;
+    font-size: 100%;
+    border-radius: 15px;
+    text-align: center;
+    font-family:'Montserrat';
+}
+
+/*footer*/
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}

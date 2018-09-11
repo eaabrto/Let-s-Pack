@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's pack</title>
+</head>
+
+<!-- Denne attribut definerer sproget på siden -->
+<html lang="en">
+
+<!--Dette meta tag fortæller browseren hvordan det skal håndtere sidens størrelse. "Width=device-witdh", betyder at bredden skal følge bredden på den device man benytter.-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Charset atributten angiver tegnkodningen i dokumentet, hvilket gør at vi også kan benytte tegnene Æ og Ø -->
+<meta charset="utf-8"/>
+
+<!-- Dette tag linker mit stylesheet til html filen-->
+<link rel="stylesheet" type="text/css" href="bruna.css">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">    
+    
+<body>
+    
+        <head>
+
+                <div class="flex-container">
+            
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" style="width:35%" class="logo"></a>
+                    </div>
+            
+                    <div class="login">
+                        <a href="signin.html"><img src="img/login2.png" style="width:42%" class="login"></a>
+                    </div>
+            
+                </div>
+            </head>
+            
+
+    <main>
+        <section>
+        <h1 id="sign">Sign in</h1>
+        </section>
+        
+        <div class="box">
+    <form autocomplete="on">
+  <input type="text" name="username"  placeholder="Username">
+</form>
+        </div>
+        
+           <div class="box1">
+   <form autocomplete="on">
+  <input type='password' name="passward"  placeholder="Password">
+</form>
+        </div>
+
+        <div>
+        <a href="profile.html"><button class="btn default" type="next" value="next"><span>LOG IN </span></button></a>
+        </div>
+        
+            <script type="text/javascript" src="js/javascript.js"></script>
+        
+    </main>
+
+    <footer>
+        <img id="face" src="img/facebook.png">
+        <p>© 2018</p>
+
+    </footer>
+
+    
+</body>
+
+
+
+</html>

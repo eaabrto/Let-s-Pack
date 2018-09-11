@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Denne attribut definerer sproget på siden -->
+<html lang="En">
+
+<!--Dette meta tag fortæller browseren hvordan det skal håndtere sidens størrelse. "Width=device-witdh", betyder at bredden skal følge bredden på den device man benytter.-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Charset atributten angiver tegnkodningen i dokumentet, hvilket gør at vi også kan benytte tegnene Æ og Ø -->
+<meta charset="utf-8">
+
+<!-- Dette tag linker mit stylesheet til html filen-->
+<link rel="stylesheet" type="text/css" href="question.css">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+
+<head>
+
+    <div class="flex-container">
+
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" style="width:35%" class="logo"></a>
+        </div>
+
+        <div class="login">
+            <a href="signin.html"><img src="img/login2.png" style="width:42%" class="login"></a></div>
+        </div>
+
+</head>
+
+<body class="back3">
+
+
+
+
+   <div class="overskrift">
+        <h1 class="destination">Are you male or female?</h1>
+    </div>
+        <main>
+  
+
+
+ <!--Checkboxes-->
+
+        <div class="check">
+            
+            <div id="list">
+            <label class="container">Male
+  <input id="checkbox1" type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+            <label class="container">Female
+  <input id="checkbox2" type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+            <label class="container">Other
+  <input id="checkbox3" type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+            </div>
+        
+
+            <a href="packinglist.html"><button class="btn default" type="next" onClick="save()" value="next"><span>DONE!</span></button></a>
+        </div>
+
+
+
+
+
+
+</main>
+    
+    <script>
+         function save() {
+            var x = document.getElementById("checkbox1").checked; 
+            if (x) {
+                localStorage.setItem("gender", "male");
+            } 
+             
+              var x = document.getElementById("checkbox2").checked; 
+            if (x) {
+                localStorage.setItem("gender", "female");
+            } 
+             
+               var x = document.getElementById("checkbox3").checked; 
+            if (x) {
+                localStorage.setItem("gender", "other");
+            } 
+
+            
+        }
+        
+    </script>
+    
+
+</body>
+
+
+</html>

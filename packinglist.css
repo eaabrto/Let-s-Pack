@@ -1,0 +1,267 @@
+body {
+    background-image: url(img/vand2.png);
+    background-size: 105%;
+    
+}
+/*logo and sign in*/
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.flex-container>div {
+    width: 100px;
+    text-align: right;
+    line-height: 75px;
+}
+
+.logo {
+    position: relative;
+    right: 30px;
+    margin-top: 2.5px;
+    padding-left: 15px;
+    
+}
+
+.login {
+    position: relative;
+    padding-right: 5px;
+    padding-top: 9px;
+}
+
+
+/*centering the animation image*/
+#myDiv { 
+    margin-top: -5%;
+    margin-left: -2%;
+}
+
+#myImage{
+ height: 120vh;
+ width: 100vw;
+}
+
+h2, span, li{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#test {
+    display: none;
+}
+
+#test2 {
+    display: none;
+}
+
+#test3 {
+    display: none;
+}
+
+#test4{
+    display: none;
+}
+
+#test5{
+    display: none;
+}
+
+/* Button */
+
+.btn {
+    border: 2px solid #73cddd;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.btn:hover {
+    background: #73cddd;
+}
+
+div {
+    text-align: center;
+}
+
+/* Animation */
+.btn span {
+    cursor: pointer; 
+    display: inline-block;
+    position: relative; 
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+/* Checklist */
+
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+h2{
+    color: black;
+}
+
+
+
+#myDIV{
+    margin-bottom: 10%;
+     background-color: #f7f5ed;
+    opacity: 0.8;
+    font-size: 16px;
+
+}
+
+#myDIV #myInput{
+    border-radius: 20px;
+}
+
+
+
+/* Remove margins and padding from the list */
+ul {
+    padding: 0;
+}
+
+/* Style the list items */
+
+.pakkeliste{
+ 
+    opacity: 0.8;
+    text-align: center;
+    
+}
+
+ul li {
+    margin-top: 2%;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 15px;
+    transition: 0.2s;
+    background-color: #f7f5ed;
+    opacity: 0.8;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #d9d9d9;
+    color: white;
+}
+
+/* Style the header */
+.header {
+    background-color: white;
+    padding: 30px 40px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+input {
+    margin: 0;
+    border: solid #e7e7e7;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    padding: 4%;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+    
+    
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}

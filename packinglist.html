@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's pack</title>
+</head>
+
+<!-- Denne attribut definerer sproget på siden -->
+<html lang="en">
+
+<!--Dette meta tag fortæller browseren hvordan det skal håndtere sidens størrelse. "Width=device-witdh", betyder at bredden skal følge bredden på den device man benytter.-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Charset atributten angiver tegnkodningen i dokumentet, hvilket gør at vi også kan benytte tegnene Æ og Ø -->
+<meta charset="utf-8">
+
+<!-- Dette tag linker mit stylesheet til html filen-->
+<link rel="stylesheet" type="text/css" href="packinglist.css">
+
+<link rel="javascript" href="script.js">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+
+
+<section background="background3.png">
+    <header class="flex-container">
+
+         <div id="myDiv">
+        <img id="myImage" src="img/loading.gif">
+        </div>
+        
+
+
+        <div class="logo" id="bob">
+            <a href="index.html"><img src="img/logo.png" style="width:58%" class="logo"></a>
+        </div>
+        
+
+        <div class="login" id="bib">
+            <a href="signin.html"><img src="img/login2.png" style="width:52%" class="login"></a>
+        </div>
+            
+
+    </header>
+
+
+    <body>
+
+
+        <div id="myDIV" class="header">
+            <div contenteditable="true"><h2>My Packing List</h2></div>
+            <input type="text" id="myInput" placeholder="Add item">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+
+        
+          <div id="test" class="pakkeliste">
+            <ul id="myUL">
+                <li>T-shirt</li>
+                <li>Shorts</li>
+                <li>Sunglasses</li>
+                <li>Bikini</li>
+                <li>Straightener</li>
+                <li>Sunscreen</li>
+                <li>iPod</li>
+                <li>Books</li>
+            </ul>
+
+        </div>
+        
+        <div id="test2" class="pakkeliste2">
+            <ul id="myUL2">
+                <li>Long sleves</li>
+                <li>Warm jacket</li>
+                <li>Goggles</li>
+                <li>Ski underwear</li>
+                <li>Winter boots</li>
+                <li>Sunscreen</li>
+                <li>Books</li>
+            </ul>
+
+        </div>
+        
+        <div id="test3" class="pakkeliste3">
+            <ul id="myUL3">
+                <li>Running shoes</li>
+                <li>Shorts</li>
+                <li>Sports t-shirts</li>
+                <li>Water bottle</li>
+                <li>iPod</li>
+                <li>Headphones</li>
+                <li>Books (or whatever makes you relaxe)</li>
+            </ul>
+
+        </div>
+        
+        <div id="test4" class="pakkeliste4">
+            <ul id="myUL4">
+                <li>Camera</li>
+                <li>Shoes made for walking</li>
+                <li>Shirts</li>
+                <li>Trousers</li>
+                <li>Going out outfit</li>
+                <li>Packpack</li>
+                <li>Map over the city</li>
+            </ul>
+
+        </div>
+        
+         <div id="test5" class="pakkeliste5">
+            <ul id="myUL4">
+                <li>This</li>
+                <li>is</li>
+                <li>a</li>
+                <li>default</li>
+                <li>packing</li>
+                <li>list</li>
+            </ul>
+
+        </div>
+        
+        <div>
+            <a href="signin.html"><button class="btn"><span>SAVE MY LIST</span></button></a>
+        </div>
+
+    </body>
+
+</section>
+    
+
+<script>
+    
+    
+    // Customized packing list
+
+    var ferietype = localStorage.getItem("ferietype");
+    var varighed = localStorage.getItem("varighed");
+    var gender = localStorage.getItem("gender");
+
+    if (ferietype === "package" && varighed === "1week" && gender === "female") {
+        document.getElementById("test").style.display="block";
+    }
+    else if(ferietype === "skiing" && varighed === "1week" && gender === "male") {
+        document.getElementById("test2").style.display="block";
+    }
+    else if(ferietype === "active" && varighed === "4days" && gender === "male") {
+        document.getElementById("test3").style.display="block";
+    }
+     else if(ferietype === "city" && varighed === "4days" && gender === "female") {
+        document.getElementById("test4").style.display="block";
+    }
+    else{
+        document.getElementById("test5").style.display="block";
+    }
+    
+
+
+
+
+
+
+    // Create a "close" button and append it to each list item
+    var myNodelist = document.getElementsByTagName("LI");
+    var i;
+    for (i = 0; i < myNodelist.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        myNodelist[i].appendChild(span);
+    }
+
+    // Click on a close button to hide the current list item
+    var close = document.getElementsByClassName("close");
+    var i;
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+
+    // Add a "checked" symbol when clicking on a list item
+    var list = document.querySelector('ul');
+    list.addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+        }
+    }, false);
+
+    // Create a new list item when clicking on the "Add" button
+    function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+            alert("You must write something!");
+        } else {
+            document.getElementById("myUL").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
+
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+    }
+</script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+
+
+</html>
+
+    

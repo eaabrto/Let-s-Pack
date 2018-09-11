@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Denne attribut definerer sproget på siden -->
+<html lang="En">
+
+<!--Dette meta tag fortæller browseren hvordan det skal håndtere sidens størrelse. "Width=device-witdh", betyder at bredden skal følge bredden på den device man benytter.-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Charset atributten angiver tegnkodningen i dokumentet, hvilket gør at vi også kan benytte tegnene Æ og Ø -->
+<meta charset="utf-8">
+
+<!-- Dette tag linker mit stylesheet til html filen-->
+<link rel="stylesheet" type="text/css" href="Groop.css">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+
+<head>
+
+    <div class="flex-container">
+
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" style="width:35%" class="logo"></a>
+        </div>
+
+        <div class="login">
+            <a href="profile.html"><img src="img/login2.png" style="width:42%" class="login"></a>
+        </div>
+
+    </div>
+</head>
+
+
+
+<body>
+  
+
+ <main> 
+
+   <div class="thomas">
+        <img src="img/thomas.jpg"onclick="showlist('thomas')">
+    </div>
+   
+
+
+   <div class="mimi">
+        <img src="img/nik.jpg"onclick="showlist('mimi')">
+   </div>
+
+
+   <div class="erik">
+        <img src="img/erik.jpg"onclick="showlist('erik')">
+   </div>
+
+
+
+
+
+
+<div id="thomas" class="sidebar">
+
+    <ul>
+        <li>THOMAS'S LIST:</li>
+        <li>Passport</li>
+        <li>Toothbrush</li>
+        <li>Camera</li>
+        <li>Hairdryer</li>
+        <li>Hiking shoes</li>
+        <li>Shampoo</li>
+        <li>Jacket</li>
+        <li>Sun cream</li>
+    </ul>
+
+</div>
+
+
+<div id="erik" class="sidebar">
+        <ul>
+            <li>ERIK'S LIST:</li>
+            <li>Passport</li>
+            <li>Toothbrush</li>
+            <li>Camera</li>
+            <li>Hairdryer</li>
+            <li>Hiking shoes</li>
+            <li>Shampoo</li>
+            <li>Jacket</li>
+            <li>Sun cream</li>
+        </ul>
+    
+    </div>
+
+
+
+        <div id="mimi" class="sidebar">
+                <ul>
+                    <li>MIMI'S LIST:</li>
+                    <li>Passport</li>
+                    <li>Toothbrush</li>
+                    <li>Camera</li>
+                    <li>Hairdryer</li>
+                    <li>Hiking shoes</li>
+                    <li>Shampoo</li>
+                    <li>Jacket</li>
+                    <li>Sun cream</li>
+                </ul>
+            
+            </div>
+
+
+</main>
+
+
+<script src="Gruppe.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+body {
+    background-image: url(img/back3.jpg);
+    background-size: 180%;
+}
+
+.back2{
+    background-image: url(img/back4.jpg);
+    background-size: 180%;
+}
+
+.back3{
+    background-image: url(img/back5.jpg);
+    background-size: 180%;
+}
+
+/*logo and sign in icons*/
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.flex-container>div {
+    width: 100px;
+    text-align: right;
+    line-height: 75px;
+}
+
+.logo {
+    position: relative;
+    right: 35px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.login {
+    position: relative;
+    padding-right: 5px;
+    padding-top: 9px;
+}
+
+
+
+/* Tekst på forsiden */
+
+.overskrift {
+    background-color: #f7f5ed;
+    opacity: 0.8;
+    border-radius: 20px;
+    margin: 5%;
+    padding: 5%;
+    margin-bottom: 10%;
+}
+
+.destination {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+
+div {
+    text-align: center;
+}
+
+/* Checkboxes */
+
+.check{
+    justify-content: center;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 55px;
+    height: 25px;
+    width: 25px;
+    background-color: #cececc;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    *background-color: #fff;*/
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color:  #1b7799;
+    border: 0.1em solid grey;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #1b7799;
+}
+
+/*box for the questions*/
+#list {
+    background: #f7f5ed;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: 1%;
+    padding-top: 2%;
+    margin: 5%;
+    padding: 5%;
+}
+
+/* Button */
+
+.btn {
+    border: 2px solid #73cddd;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.btn:hover {
+    background: #73cddd;
+}
+
+div {
+    text-align: center;
+}
+
+/* Animation */
+.btn span {
+    cursor: pointer; 
+    display: inline-block;
+    position: relative; 
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/*footer*/
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+    font-size: 10px;
+}
